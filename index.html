@@ -1,87 +1,162 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.thymeleaf.org"
- th:replace="~{base::layout(~{::section})}">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.thymeleaf.org "
+  th:replace="~{base::layout(~{::section})}">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
 
-<section>
-
-<div class="container p-5">
-<p class="text-center fs-3 mt-4">Admin Dashboard</p>
-<div class="row p-5">
-<div class="col-md-4 mt-2">
-<a href="/admin/loadAddProduct" class="text-decoration-none">
-<div class="card card-sh">
-<div class="card-body text-center text-primary">
-<i class="fa-solid fa-circle-plus fa-4x text-primary"></i>
-<h4>Add Product</h4>
-</div>
-</div>
-</a>
-</div>
-
-<div class="col-md-4 mt-2">
-<a href="/admin/category" class="text-decoration-none">
-<div class="card card-sh">
-<div class="card-body text-center text-warning">
-<i class="fa-solid fa-layer-group fa-4x "></i>
-<h4>Add Category</h4>
-</div>
-</div>
-</a>
-</div>
-
-<div class="col-md-4 mt-2">
-<a href="/admin/products" class="text-decoration-none">
-<div class="card card-sh">
-<div class="card-body text-center text-success">
-<i class="fa-solid fa-table-cells-large fa-4x"></i>
-<h4>View Product</h4>
-</div>
-</div>
-</a>
+    <section>
+    <!-- Start Slider -->
+    
+    
+      <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/ecomme1.png" class="d-block w-100" alt="..."
+      height="350 px">
+    </div>
+    <div class="carousel-item">
+      <img src="images/ecomm1.jpg" class="d-block w-100" alt="..."
+      height="350px">
+    </div>
+    <div class="carousel-item">
+      <img src="images/ecomm2.jpg" class="d-block w-100" alt="..."
+      height="350px">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-<div class="col-md-4 mt-5">
-<a href="#" class="text-decoration-none">
-<div class="card card-sh">
-<div class="card-body text-center text-warning">
-<i class="fa-solid fa-box-open fa-4x"></i>
-<h4>Orders</h4>
+
+<!-- End Slider -->
+
+<!-- Start Category Model -->
+     
+ <div class="container">
+ <div class="row">
+ <p class="text-center fs-4">Category</p>
+ <div class="col-md-2">
+<div class="card-rounded circle shadow-sm p-3 mb-5 bg-body-tertiary rounded" >
+<div class="card body text-center">
+<img src="images/category/appli.png" width="95%" height="140px">
+<p>Electronics</p>
+</div>            
 </div>
-</div>
-</a>
 </div>
 
-<div class="col-md-4 mt-5">
-<a href="#" class="text-decoration-none">
-<div class="card card-sh">
-<div class="card-body text-center text-primary">
-<i class="fa-solid fa-circle-user fa-4x"></i>
-<h4>Users</h4>
+<div class="col-md-2">
+<div class="card-rounded circle shadow-sm p-3 mb-5 bg-body-tertiary rounded" >
+<div class="card body text-center">
+<img src="images/category/beauty.png" width="95%" height="140px">
+<p>Beauty</p>
+</div>            
 </div>
-</div>
-</a>
 </div>
 
-<div class="col-md-4 mt-5">
-<a href="#" class="text-decoration-none">
-<div class="card card-sh">
-<div class="card-body text-center text-primary">
-<i class="fa-solid fa-user-plus fa-4x"></i>
-<h4>Add Admin</h4>
+<div class="col-md-2">
+<div class="card-rounded circle shadow-sm p-3 mb-5 bg-body-tertiary rounded" >
+<div class="card body text-center">
+<img src="images/category/Clothes.png" width="95%" height="140px">
+<p>Clothes</p>
+</div>            
 </div>
 </div>
-</a>
+
+<div class="col-md-2">
+<div class="card-rounded circle shadow-sm p-3 mb-5 bg-body-tertiary rounded" >
+<div class="card body text-center">
+<img src="images/category/laptop.png" width="95%" height="140px">
+<p>Laptop</p>
+</div>            
 </div>
+</div>
+
+<div class="col-md-2">
+<div class="card-rounded circle shadow-sm p-3 mb-5 bg-body-tertiary rounded" >
+<div class="card body text-center">
+<img src="images/category/mobile.png" width="95%" height="140px">
+<p>Mobile</p>
+</div>            
+</div>
+</div>
+
+<div class="col-md-2">
+<div class="card-rounded circle shadow-sm p-3 mb-5 bg-body-tertiary rounded" >
+<div class="card body text-center">
+<img src="images/category/grocery.jpg" width="95%" height="140px">
+<p>Grocery</p>
+
+</div>            
+</div>
+</div>
+
+
 
 </div>
 </div>
+<!-- End Category Model -->
+
+<!-- Start Latest Product Module  -->
+<div class="container-fluid bg-light p-3">
+<div class="row">
+<p class="text-center fs-4">Latest Product</p>
+
+
+<div class="col-md-3">
+<div class="card shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+<div class="card-body text center">
+<img src="images/product/laptop.png" alt="" width="95%" height=140px>
+<p class="text-center">HP Laptop</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+<div class="card-body text center">
+<img src="images/product/laptop.png" alt="" width="95%" height=140px>
+<p class="text-center">HP Laptop</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+<div class="card-body text center">
+<img src="images/product/laptop.png" alt="" width="95%" height=140px>
+<p class="text-center">HP Laptop</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+<div class="card-body text center">
+<img src="images/product/laptop.png" alt="" width="95%" height=140px>
+<p class="text-center">HP Laptop</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+<!-- End Latest Product Module -->
+
 
 </section>
 
